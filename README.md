@@ -12,17 +12,3 @@
 2.Язык программирования - C++
 
 Назначение проекта: Обеспечение удобного инструмента для выполнения математических операций с матрицами.
-
-This project is a windowed matrix calculator application. It is designed to help students studying mathematics and will allow you to perform various operations on matrices.
-The main functions of the calculator:
-1. Matrix addition
-2.Matrix subtraction
-3. Matrix multiplication
-4.Calculation of the determinant of the matrix
-5.Matrix transposition
-
-Development technologies:
-1.Development Environment - Visual Studio
-2. Programming language - C++
-
-The purpose of the project is to provide a convenient tool for performing mathematical operations with matrices.
