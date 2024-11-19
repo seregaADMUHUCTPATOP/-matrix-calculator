@@ -1,4 +1,28 @@
 # - КАЛЬКУЛЯТОР МАТРИЦ
--Данный проект представляет собой оконное приложение с функциями калькулятора матриц, который будет полезен студентам, изучающим математику. В данном калькуляторе можно будет производить несколько действий над введенными матрицами: сложение, вычитание, умножение, нахождения определителя матрицы, транспонирование матрицы. Проект будет разрабатываться в среде программирования Visual Studio на высоком языке программирования C++.
+Этот проект представляет собой оконное приложение — калькулятор матриц. Он разработан для помощи студентам, изучающим математику, и позволит выполнять различные операции над матрицами.
+Основные функции калькулятора:
+1.Сложение матриц
+2.Вычитание матриц
+3.Умножение матриц
+4.Вычисление определителя матрицы
+5.Транспонирование матрицы
 
--This project is a windowed application with the functions of a matrix calculator, which will be useful for students studying mathematics. In this calculator, you can perform several actions on the entered matrices: addition, subtraction, multiplication, finding the determinant of the matrix, transposing the matrix. The project will be developed in the Visual Studio programming environment in the high-level C++ programming language.
+Технологии разработки:
+1.Среда разработки - Visual Studio
+2.Язык программирования - C++
+
+Назначение проекта: Обеспечение удобного инструмента для выполнения математических операций с матрицами.
+
+This project is a windowed matrix calculator application. It is designed to help students studying mathematics and will allow you to perform various operations on matrices.
+The main functions of the calculator:
+1. Matrix addition
+2.Matrix subtraction
+3. Matrix multiplication
+4.Calculation of the determinant of the matrix
+5.Matrix transposition
+
+Development technologies:
+1.Development Environment - Visual Studio
+2. Programming language - C++
+
+The purpose of the project is to provide a convenient tool for performing mathematical operations with matrices.
