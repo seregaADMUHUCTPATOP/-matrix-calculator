@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+int main {
 #include <iomanip>
 #include <stdexcept>
 #include <limits>
@@ -16,12 +17,12 @@ public:
     Matrix(int rows, int cols) : rows(rows), cols(cols) { data.resize(rows, vector<double>(cols, 0.0)); }
 
     void inputMatrix() {
-        cout << "Введите элементы матрицы (" << rows << "x" << cols << "):" << endl;
+        cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ» Г¬Г ГІГ°ГЁГ¶Г» (" << rows << "x" << cols << "):" << endl;
         for (int i = 0; i < rows; ++i) {
             for (int j = 0; j < cols; ++j) {
                 double val;
                 while (!(cin >> val)) {
-                    cout << "Ошибка ввода. Повторите: ";
+                    cout << "ГЋГёГЁГЎГЄГ  ГўГўГ®Г¤Г . ГЏГ®ГўГІГ®Г°ГЁГІГҐ: ";
                     cin.clear();
                     cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 }
@@ -60,7 +61,7 @@ private:
 
     Matrix multiply(const Matrix& other) const {
         if (cols != other.rows) {
-            throw runtime_error("Несовместимые размеры матриц для умножения.");
+            throw runtime_error("ГЌГҐГ±Г®ГўГ¬ГҐГ±ГІГЁГ¬Г»ГҐ Г°Г Г§Г¬ГҐГ°Г» Г¬Г ГІГ°ГЁГ¶ Г¤Г«Гї ГіГ¬Г­Г®Г¦ГҐГ­ГЁГї.");
         }
         Matrix result(rows, other.cols);
         for (int i = 0; i < rows; ++i) {
@@ -85,20 +86,42 @@ private:
 
     double calculateDeterminant() const {
         if (rows != cols) {
-            throw runtime_error("Определитель можно вычислить только для квадратных матриц.");
+            throw runtime_error("ГЋГЇГ°ГҐГ¤ГҐГ«ГЁГІГҐГ«Гј Г¬Г®Г¦Г­Г® ГўГ»Г·ГЁГ±Г«ГЁГІГј ГІГ®Г«ГјГЄГ® Г¤Г«Гї ГЄГўГ Г¤Г°Г ГІГ­Г»Гµ Г¬Г ГІГ°ГЁГ¶.");
         }
         if (rows == 1) return data[0][0];
         if (rows == 2) return data[0][0] * data[1][1] - data[0][1] * data[1][0];
 
         //  For larger matrices, a more sophisticated determinant calculation is needed (e.g., LU decomposition).
-        throw runtime_error("Вычисление определителя поддерживается только для матриц 2x2.");
+        throw runtime_error("Г‚Г»Г·ГЁГ±Г«ГҐГ­ГЁГҐ Г®ГЇГ°ГҐГ¤ГҐГ«ГЁГІГҐГ«Гї ГЇГ®Г¤Г¤ГҐГ°Г¦ГЁГўГ ГҐГІГ±Гї ГІГ®Г«ГјГЄГ® Г¤Г«Гї Г¬Г ГІГ°ГЁГ¶ 2x2.");
 
 
     }
 
     void checkDimensions(const Matrix& other) const {
         if (rows != other.rows || cols != other.cols) {
-            throw runtime_error("Матрицы должны иметь одинаковые размеры для этой операции.");
+            throw runtime_error("ГЊГ ГІГ°ГЁГ¶Г» Г¤Г®Г«Г¦Г­Г» ГЁГ¬ГҐГІГј Г®Г¤ГЁГ­Г ГЄГ®ГўГ»ГҐ Г°Г Г§Г¬ГҐГ°Г» Г¤Г«Гї ГЅГІГ®Г© Г®ГЇГҐГ°Г Г¶ГЁГЁ.");
         }
     }
 };
+=======
+using namespace std;
+vector<vector<int>> inputMatrix(int rows, int cols) {
+    setlocale(LC_ALL, "Russian");
+    vector<vector<int>> matrix(rows, vector<int>(cols));
+    cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ» Г¬Г ГІГ°ГЁГ¶Г»:" << endl;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cin >> matrix[i][j];
+        }
+    }
+    return matrix;
+}
+void printMatrix(const vector<vector<int>>& matrix) {
+    for (const auto& row : matrix) {
+        for (int element : row) {
+            cout << element << " ";
+        }
+        cout << endl;
+    }
+}
+}
