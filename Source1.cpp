@@ -90,7 +90,7 @@ private:
         if (rows == 1) return data[0][0];
         if (rows == 2) return data[0][0] * data[1][1] - data[0][1] * data[1][0];
 
-        //  For larger matrices, a more sophisticated determinant calculation is needed (e.g., LU decomposition).
+        
         throw runtime_error("Вычисление определителя поддерживается только для матриц 2x2.");
 
 
@@ -104,6 +104,7 @@ private:
 };
 
 int main() {
+    setlocale(LC_ALL, "RUSSIAN");
     int rowsA, colsA, rowsB, colsB;
     char operation;
 
@@ -122,7 +123,7 @@ int main() {
         cout << "Выберите операцию (+, -, *, t, d): ";
         cin >> operation;
 
-        Matrix result(matrixA.rows, matrixA.cols); // Initialize result matrix with correct dimensions
+        Matrix result(matrixA.rows, matrixA.cols); 
 
 
         if (operation == '+') result = matrixA + matrixB;
