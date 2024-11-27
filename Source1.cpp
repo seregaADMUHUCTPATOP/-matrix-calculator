@@ -102,3 +102,47 @@ private:
         }
     }
 };
+
+int main() {
+    int rowsA, colsA, rowsB, colsB;
+    char operation;
+
+    cout << "Введите размеры матрицы A (строки столбцы): ";
+    cin >> rowsA >> colsA;
+    cout << "Введите размеры матрицы B (строки столбцы): ";
+    cin >> rowsB >> colsB;
+
+    Matrix matrixA(rowsA, colsA);
+    Matrix matrixB(rowsB, colsB);
+
+    try {
+        matrixA.inputMatrix();
+        matrixB.inputMatrix();
+
+        cout << "Выберите операцию (+, -, *, t, d): ";
+        cin >> operation;
+
+        Matrix result(matrixA.rows, matrixA.cols); // Initialize result matrix with correct dimensions
+
+
+        if (operation == '+') result = matrixA + matrixB;
+        else if (operation == '-') result = matrixA - matrixB;
+        else if (operation == '*') result = matrixA * matrixB;
+        else if (operation == 't') result = matrixA.transpose();
+        else if (operation == 'd') {
+            cout << "Определитель A: " << matrixA.determinant() << endl;
+            return 0;
+        } else {
+            cout << "Неверная операция." << endl;
+            return 1;
+        }
+
+        cout << "Результат:" << endl;
+        result.printMatrix();
+    } catch (const runtime_error& error) {
+        cerr << "Ошибка: " << error.what() << endl;
+        return 1;
+    }
+
+    return 0;
+}
