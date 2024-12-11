@@ -1,6 +1,6 @@
 # Калькулятор Матриц
 
-Этот проект представляет собой оконное приложение — калькулятор матриц. Он разработан для помощи студентам, изучающим математику, и позволит выполнять различные операции над матрицами.
+Этот проект представляет собой сайт — калькулятор матриц. Он разработан для помощи студентам, изучающим математику, и позволит выполнять различные операции над матрицами.
 
 ## Основные функции:
 
@@ -12,8 +12,8 @@
 
 ## Технологии:
 
-* **Среда разработки:** Visual Studio
-* **Язык программирования:** C++
+* **Среда разработки:** Онлайн песочница Codesandbox
+* **Язык программирования:** JavaScript, HTML, CSS
 
 ## Назначение:
 
@@ -21,7 +21,7 @@
 
 # Matrix Calculator
 
-This project is a graphical application — a matrix calculator. It's designed to assist students studying mathematics and allows for various operations on matrices.
+This project is a matrix calculator website. It is designed to help students studying mathematics and will allow you to perform various operations on matrices.
 
 ## Key Features:
 
@@ -33,9 +33,8 @@ This project is a graphical application — a matrix calculator. It's designed t
 
 ## Technologies Used:
 
-* **Development Environment:** Visual Studio
-* **Programming Language:** C++
-
+* **Development Environment:** Codesandbox Online Sandbox
+* **Programming Language:** JavaScript, HTML, CSS
 ## Purpose:
 
 To provide a user-friendly tool for performing mathematical operations with matrices.
