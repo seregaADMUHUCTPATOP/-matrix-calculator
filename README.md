@@ -13,7 +13,7 @@
 ## Технологии:
 
 * **Среда разработки:** Онлайн песочница Codesandbox
-* **Язык программирования:** JavaScript, HTML, CSS
+* **Язык программирования:** TypeScript
 
 ## Назначение:
 
@@ -34,7 +34,8 @@ This project is a matrix calculator website. It is designed to help students stu
 ## Technologies Used:
 
 * **Development Environment:** Codesandbox Online Sandbox
-* **Programming Language:** JavaScript, HTML, CSS
+* **Programming Language:** TypeScript
+
 ## Purpose:
 
 To provide a user-friendly tool for performing mathematical operations with matrices.
