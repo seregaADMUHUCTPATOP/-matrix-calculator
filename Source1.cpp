@@ -1,10 +1,11 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 vector<vector<int>> inputMatrix(int rows, int cols) {
     setlocale(LC_ALL, "Russian");
     vector<vector<int>> matrix(rows, vector<int>(cols));
-    cout << "Ââåäèòå ýëåìåíòû ìàòðèöû:" << endl;
+    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã» Ã¬Ã Ã²Ã°Ã¨Ã¶Ã»:" << endl;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             cin >> matrix[i][j];
